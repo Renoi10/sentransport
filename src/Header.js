@@ -1,12 +1,15 @@
 import './Header.css';
-function Header () {
-    return (
-        < header className =" header ">
-< h1 className ="header - titre "> SenTransport </ h1 >
-<p className ="header - soustitre ">
-Votre guide du transport en commun a Dakar
-</p >
-</ header >
-) ;
+
+function Header() {
+  const date = new Date().toLocaleDateString('fr-FR');
+
+  return (
+    <header className="header">
+      <h1>SénTransport</h1>
+      <h2>Suivi des lignes de bus à Dakar</h2>
+      <p>{date}</p>
+    </header>
+  );
 }
-export default Header ;
+
+export default Header;
